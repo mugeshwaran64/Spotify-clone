@@ -1,53 +1,105 @@
-# 🎧 Spotify Clone with Django and React
-![home](./screenshots/home.PNG)
-Watch video from here: [https://www.youtube.com/watch?v=AC__zE-EqgE](https://www.youtube.com/watch?v=AC__zE-EqgE)
-## ⚙ Used Technologies:
-- Django Rest Framework
-- React
-- Typescript
-- TailwindCSS
-- Redux Toolkit
-- Material UI
-- Docker
+# Spotify Clone
 
-## 🛠 How to setup?
-The easiest way to setup this project is using Docker. 
+A full-stack Spotify clone built with React (frontend) and Django (backend).
 
-If you don't have Docker you can install it from [this link](https://www.docker.com/products/docker-desktop/).
+## Technologies Used
 
-After downloading Docker open terminal and go to directory of docker-compose.yml. 
+- **Frontend:** React, TypeScript, TailwindCSS, Redux Toolkit, Material UI
+- **Backend:** Django, Django Rest Framework
+- **Database:** SQLite (configured for local development)
+- **Other:** Axios for API calls
 
-After all just write `docker compose up` command. You will have to wait to build images and start the app for a while. When it ends you can open site from [http://localhost:3000](http://localhost:3000) address.
+## Features
 
-Also you can access to admin panel via this link: [http://localhost:8000/admin/](http://localhost:8000/admin/). Username and password is just `admin`.
+- User authentication (login/register)
+- Music playback
+- Playlists management
+- Artist and genre pages
+- Search functionality
+- Admin panel for content management
 
-## 📖 Documentation
-All of the necessary algorithms have comment. On the other hand, there is Postman documentation available to follow necessary URLs and Responses. To access it, open the Postman application and import the `Spotify.postman_collection.json` file.
+## Setup Instructions
 
-## 📷 Screenshots
-### Home
-![home](./screenshots/home.PNG)
+### Prerequisites
 
-### Playlist
-![playlist](./screenshots/playlist_page.PNG)
+- Python 3.8+
+- Node.js 14+
+- Git
 
-### Profile
-![profile](./screenshots/profile.PNG)
+### Backend Setup
 
-### Genres
-![searching](./screenshots/searching.PNG)
+1. Navigate to the backend directory:
+   ```
+   cd backend
+   ```
 
-### Genres
-![artist](./screenshots/artist.PNG)
+2. Install Python dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
 
-### Search
-![search](./screenshots/search.PNG)
+3. Run database migrations:
+   ```
+   python manage.py migrate
+   ```
 
-### Login
-![login](./screenshots/login.PNG)
+4. Create superuser (optional, for admin access):
+   ```
+   python manage.py createsuperuser
+   ```
 
-### Register
-![register](./screenshots/register.PNG)
+5. Start the Django server:
+   ```
+   python manage.py runserver
+   ```
+
+   The backend will run on http://localhost:8000
+
+### Frontend Setup
+
+1. Navigate to the frontend directory:
+   ```
+   cd frontend
+   ```
+
+2. Install Node.js dependencies:
+   ```
+   npm install
+   ```
+
+3. Start the React development server:
+   ```
+   npm start
+   ```
+
+   The frontend will run on http://localhost:3000
+
+## Admin Panel
+
+Access the Django admin panel at http://localhost:8000/admin/
+
+Default credentials:
+- Username: admin
+- Password: admin
+
+## API Documentation
+
+Use the provided Postman collection (`Spotify.postman_collection.json`) for API testing and documentation.
+
+## Screenshots
+
+(Add screenshots here if available)
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## License
+
+This project is for educational purposes.
 
 ### Admin Panel
 ![admin_panel](./screenshots/admin_panel.PNG)
