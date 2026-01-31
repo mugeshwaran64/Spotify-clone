@@ -109,3 +109,5 @@ This project is for educational purposes.
 
 ### Admin Panel Genre
 ![admin_panel_genre](./screenshots/admin_panel_genre.PNG)
+
+we want to deploy 
